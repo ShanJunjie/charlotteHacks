@@ -152,8 +152,8 @@
 			var infowindow = null;
 			var map;
 			var res_json;
-			var defaultLat = -33.2343;
-			var defaultLng = 17.8520;
+			var defaultLat = 38.015481;
+			var defaultLng = -97.581585;
 			var filename_json = "fakeEvent.json";
 			var res_json = null;
 			highDatesObj = [];
@@ -302,9 +302,9 @@
 						infowindow.open(map, this);
 					});
 
-					google.maps.event.addListener(marker, 'mouseout', function() {
-						infowindow.close();
-					});
+					// google.maps.event.addListener(marker, 'mouseout', function() {
+					// 	infowindow.close();
+					// });
 
 				}
 
