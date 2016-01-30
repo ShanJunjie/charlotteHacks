@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.image{
+			width: 200px;
+			height: 200px;
+		}
+		.video-section .pattern-overlay {
+		background-color: rgba(71, 71, 71, 0.59);
+		padding: 110px 0 32px;
+		min-height: 496px; 
+		/* Incase of overlay problems just increase the min-height*/
+		}
+		.video-section h1, .video-section h3{
+		text-align:center;
+		color:#fff;
+		}
+		.video-section h1{
+		font-size:110px;
+		font-family: 'Buenard', serif;
+		font-weight:bold;
+		text-transform: uppercase;
+		margin: 40px auto 0px;
+		text-shadow: 1px 1px 1px #000;
+		-webkit-text-shadow: 1px 1px 1px #000;
+		-moz-text-shadow: 1px 1px 1px #000;
+		}
+		.video-section h3{
+		font-size: 25px;
+		font-weight:lighter;
+		margin: 0px auto 15px;
+		}
+		.video-section .buttonBar{display:none;}
+		.player {font-size: 1px;}
+	</style>
+	<link href='http://fonts.googleapis.com/css?family=Buenard:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+	
+	<!-- Warming Up -->
+
+
+<!--Video Section-->
+<section class="content-section video-section">
+  <div class="pattern-overlay">
+  <div class="embed-responsive embed-responsive-16by9">
+  	    <iframe class="embed-responsive-item" src="video.mp4"></iframe>
+  	       <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+        <h1>Full Width Video</h1>  
+        <h3>Enjoy Adding Full Screen Videos to your Page Sections</h3>
+	   </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--Video Section Ends Here-->
+<img class="image" src="https://external.xx.fbcdn.net/safe_image.php?d=AQCnYtAEpOOHjTMC&w=130&h=130&url=https%3A%2F%2Fsecure.assets.bostatic.com%2Fapps%2Fmonroe%2Fmedia%2Ffiler_public%2Fa8%2F94%2Fa89440f0-7fee-48b8-a341-445414d46baf%2Fsww-workplace-policies.jpg&cfs=1&sx=600&sy=0&sw=1000&sh=1000">
+<script>
+$(document).ready(function () {
+
+    $(".player").mb_YTPlayer();
+
+});
+</script>
+
+</body>
+</html>

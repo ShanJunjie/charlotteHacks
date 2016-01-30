@@ -1,0 +1,57 @@
+{
+  "status ": 200,
+  "data": [
+    {
+        "name ": "John Doe ",
+        "about": "something...",
+        "location": {
+          "longitude ": 27.8520,
+          "latitude": -33.2343
+        },
+        "photo": "1.jpg",
+        "src": "facebook",
+        "recentPost": [
+          {
+              "title": "something 1 ",
+              "content": "some content 1",
+              "picture": "1.jpg",
+              "img_urc": "1.jpg",
+              "time": "time in string 1"
+            },
+            {
+                "title": "something 2",
+                "content": "some content 2",
+                "picture": "1.jpg",
+                "img_urc": "1.jpg",
+                "time": "time in string 2"
+              }
+        ]
+    },
+    {
+        "name ": "Jane Doe ",
+        "about": "other thing...",
+        "location": {
+          "longitude ": 37.8520,
+          "latitude": -43.2343
+        },
+        "photo": "1.jpg",
+        "src": "facebook",
+        "recentPost": [
+          {
+              "title": "something 1 ",
+              "content": "some content 1",
+              "picture": "1.jpg",
+              "img_urc": "1.jpg",
+              "time": "time in string 1"
+            },
+            {
+                "title": "something 2",
+                "content": "some content 2",
+                "picture": "1.jpg",
+                "img_urc": "1.jpg",
+                "time": "time in string 2"
+              }
+        ]
+    }
+  ]
+}
