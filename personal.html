@@ -5,8 +5,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	<style>
 		.search {
 		    position: relative;
@@ -16,7 +14,7 @@
 			padding-top: 8px;
 		}
 		.left-search input {
-		    padding-left: 30px;    
+		    padding-left: 30px;
 		}
 		.left-search i {
 		    position: absolute;
@@ -36,7 +34,7 @@
 	</style>
 </head>
 <body>
-  
+
 <div class="container" id="nav">
 	<nav class="navbar navbar-default">
     	<div class="col-md-1 navbar-header">
@@ -55,15 +53,15 @@
 					<input type="text" class="form-control" placeholder="Current location" />
 				</div>
 			</div>
-		</div>			
+		</div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	        <ul class="nav navbar-nav navbar-right">
 		        <li><a href="/home1.html">HOME</a></li>
-		        <li><a href="/person">WOMEN IN TECH</a></li>
-		        <li><a href="/event">EVENT</a></li>
+		        <li><a href="/person.html">WOMEN IN TECH</a></li>
+		        <li><a href="/event.html">EVENT</a></li>
 	        </ul>
     	</div>
-	</nav>         
+	</nav>
 </div>
 
 <div>
@@ -74,7 +72,7 @@
 	<div class="col-md-1"></div>
 	<div class="col-md-2">
 		<div class="row photo">
-			<img src="1.jpeg" class="img-responsive img-rounded">
+			<img id="photo" class="img-responsive img-rounded">
 		</div>
 		<div class="row detail">
 			<div class="well well-sm"><b>About Me</b><p id="about"></p></div>
@@ -85,14 +83,16 @@
 	</div>
 	<div class="col-md-1"></div>
 	<div class="col-md-4">
-		<h1>Hi,I'm Lina!</h1>
+		<h1>Hi</h1>
 		<h3>Recent Post</h3>
-		<div class="row post">
-			<div class="col-md-6 leftpost show-read-more"></div>
-			<div class="col-md-6 picture"><img src=""></div>
+		<div class="row post" id="postList">
+
 		</div>
 	</div>
 </div>
-<script src="personal.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="./personal.js"></script>
 </body>
 </html>

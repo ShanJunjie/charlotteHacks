@@ -254,8 +254,8 @@
 				});
 
 				infowindow = new google.maps.InfoWindow({
-				  content: "loading...",
-				  maxWidth: 400
+					content: "loading...",
+					maxWidth: 400
 				});
 
 
@@ -285,11 +285,11 @@
 						//(i+1).toString()  +'A|FF0000|000000',
 						//icon: 'https://raw.githubusercontent.com/Concept211/Google-Maps-Markers/master/images/marker_green' + (i % 100 + 1).toString() + '.png',
 						//shape: shape,
-						label: (i+1).toString(),
+						label: (i + 1).toString(),
 						title: res.name,
 						//zIndex: res[3],
-						html: '<h2>' + 'Event ' +(i + 1).toString() + ': ' + res.name+ '</h2>' + '<div id="bodyContent">' +
-							' <a href=" ' + res.url + ' "> ' + res.url + '</a>'+ '<p> ' + res.introduction + ' </p>' +'</div>'
+						html: '<h2>' + 'Event ' + (i + 1).toString() + ': ' + res.name + '</h2>' + '<div id="bodyContent">' +
+							' <a href=" ' + res.url + ' "> ' + res.url + '</a>' + '<p> ' + res.introduction + ' </p>' + '</div>'
 					});
 
 					google.maps.event.addListener(marker, "click", function() {
@@ -310,8 +310,6 @@
 
 				console.log('added location to map');
 			}
-
-
 		</script>
 
 		<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
